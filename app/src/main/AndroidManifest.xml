@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiang.addnative">
+
+    <application
+        android:name="com.xiang.addnative.MyApplication1"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.xiang.addnative.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.xiang.addnative.Service1" android:process=":process1"/>
+        <receiver android:name="com.xiang.addnative.Receiver1" android:process=":process1"/>
+        <service android:name="com.xiang.addnative.Service2" android:process=":process2"/>
+        <receiver android:name="com.xiang.addnative.Receiver2" android:process=":process2"/>
+    </application>
+
+</manifest>
