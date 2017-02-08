@@ -20,6 +20,10 @@
         <receiver android:name="com.xiang.addnative.Receiver1" android:process=":process1"/>
         <service android:name="com.xiang.addnative.Service2" android:process=":process2"/>
         <receiver android:name="com.xiang.addnative.Receiver2" android:process=":process2"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="20affa3f9cb4feccfa90be8bb29854c21f2026e2" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
