@@ -11,7 +11,7 @@
 #include <sys/stat.h>
 #include <sys/inotify.h>
 
-#include "com_test_kudaemon_nativ_NativeDaemonAPI21.h"
+#include "com_tools_daemon_NativeDaemonAPI21.h"
 #include "log.h"
 #include "constant.h"
 
@@ -107,7 +107,7 @@ int lock_file(char* lock_file_path){
 }
 
 
-JNIEXPORT void JNICALL Java_com_test_kudaemon_nativ_NativeDaemonAPI21_doDaemon(JNIEnv *env, jobject jobj, jstring indicatorSelfPath, jstring indicatorDaemonPath, jstring observerSelfPath, jstring observerDaemonPath){
+JNIEXPORT void JNICALL Java_com_tools_daemon_NativeDaemonAPI21_doDaemon(JNIEnv *env, jobject jobj, jstring indicatorSelfPath, jstring indicatorDaemonPath, jstring observerSelfPath, jstring observerDaemonPath){
 	if(indicatorSelfPath == NULL || indicatorDaemonPath == NULL || observerSelfPath == NULL || observerDaemonPath == NULL){
 		LOGE("parameters cannot be NULL !");
 		return ;

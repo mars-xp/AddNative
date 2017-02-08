@@ -2,8 +2,9 @@ package com.xiang.addnative;
 
 import android.content.Context;
 
-import com.test.kudaemon.DaemonApplication;
-import com.test.kudaemon.DaemonConfigurations;
+import com.tools.daemon.DaemonApplication;
+import com.tools.daemon.DaemonConfigurations;
+
 
 /**
  * Implementation 1<br/>

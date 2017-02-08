@@ -13,7 +13,7 @@
 
 #include "log.h"
 #include "constant.h"
-#include "com_test_kudaemon_nativ_NativeDaemonAPI20.h"
+#include "com_tools_daemon_NativeDaemonAPI20.h"
 
 
 
@@ -84,7 +84,7 @@ void kill_zombie_process(char* zombie_name){
     }
 }
 
-JNIEXPORT void JNICALL Java_com_test_kudaemon_nativ_NativeDaemonAPI20_doDaemon(JNIEnv *env, jobject jobj, jstring pkgName, jstring svcName, jstring daemonPath){
+JNIEXPORT void JNICALL Java_com_tools_daemon_NativeDaemonAPI20_doDaemon(JNIEnv *env, jobject jobj, jstring pkgName, jstring svcName, jstring daemonPath){
 	if(pkgName == NULL || svcName == NULL || daemonPath == NULL){
 		LOGE("native doDaemon parameters cannot be NULL !");
 		return ;
