@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="com.xiang.addnative.Service1" android:process=":process1"/>
-        <receiver android:name="com.xiang.addnative.Receiver1" android:process=":process1"/>
+        <service android:name="com.xiang.addnative.Service1" android:process=":service"/>
+        <receiver android:name="com.xiang.addnative.Receiver1" android:process=":service"/>
         <service android:name="com.xiang.addnative.Service2" android:process=":process2"/>
         <receiver android:name="com.xiang.addnative.Receiver2" android:process=":process2"/>
         <meta-data

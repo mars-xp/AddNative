@@ -67,6 +67,9 @@ public interface IDaemonStrategy {
 				return mDaemonStrategy;
 			}
 			int sdk = Build.VERSION.SDK_INT;
+			if(sdk > 23){
+				sdk = 23;
+			}
 			switch (sdk) {
 				case 23:
 					mDaemonStrategy = new DaemonStrategy23();

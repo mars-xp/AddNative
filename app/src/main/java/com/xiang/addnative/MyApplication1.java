@@ -31,7 +31,7 @@ public class MyApplication1 extends DaemonApplication {
     @Override
     protected DaemonConfigurations getDaemonConfigurations() {
     	 DaemonConfigurations.DaemonConfiguration configuration1 = new DaemonConfigurations.DaemonConfiguration(
-                 "com.xiang.addnative:process1",
+                 "com.xiang.addnative:service",
                  Service1.class.getCanonicalName(),
                  Receiver1.class.getCanonicalName());
 
